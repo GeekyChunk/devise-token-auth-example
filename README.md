@@ -1,3 +1,5 @@
+# Rails 7 Devise Token Authentication (really better than devise-jwt or any other craps)
+
 I wanted to create an authentication system for my Rails API, but one thing about APIs (with no client) is that you can't use sessions or cookies for authentication.
 So instead, I used the gem devise_token_auth, which uses tokens. Put simply, this is how it works: when you make HTTP requests to sign up or log in, the response headers give you authentication tokens, which you send in subsequent HTTP requests' headers to prove that you're authenticated.
 
@@ -6,7 +8,7 @@ While the official docs provide most of the information you need, there were a f
 Note: Guide is for Linux or MacOS.
 
 # Implementation Steps
-Please also feel free to check out the bare-bones [repository](https://127.0.0.1) I created, as a proof of concept for how to use this gem. 
+Please also feel free to check out the bare-bones repository I created, as a proof of concept for how to use this gem. 
 
 # 1. Install devise_token_auth
 
